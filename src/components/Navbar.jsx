@@ -1,7 +1,6 @@
 import { Paper } from "@mui/material";
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import IconButton from '@mui/material/IconButton';
 
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -21,7 +20,8 @@ function Navbar() {
              >
                 <div>
                     <img 
-                        src={Logo} 
+                        src={Logo}
+                        alt="logo"
                         style={{ 
                             height: "25px", 
                             paddingTop: "3px" 
