@@ -1,17 +1,18 @@
 import { Paper } from "@mui/material";
 import Searchbar from "./Searchbar";
 import Logo from "../logo.png";
+import "../css/Navbar.css"
 
 function Navbar() {
     return (
-        <div>
+        <div className="navbar">
             <Paper 
-                elevation={1}
+                elevation={0}
                 style={{
                     display:"flex", 
                     flexWrap:"wrap", 
                     justifyContent:"space-between",
-                    padding:"5px 10px",
+                    padding: "20px 5% 20px 5%",
                 }}
              >
                 <div>
@@ -24,7 +25,9 @@ function Navbar() {
                         }} 
                     />
                 </div>
-                <Searchbar />
+                <div className="navbar-searchbar">
+                    <Searchbar />
+                </div>
             </Paper>
         </div>
     )

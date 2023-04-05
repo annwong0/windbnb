@@ -23,15 +23,15 @@ function StayCard({stay}) {
                         container
                         direction="row"
                         justifyContent="space-between"
-                        alignItems="center">
-                            <div className='caption'>
-                                {stay.superHost && (<span className='superHost'>Super Host </span>)}<span>{stay.type}</span>{stay.beds && (<span> . {stay.beds} {stay.beds === 1 ? 'bed' : 'beds'}</span>)}
-                            </div>
-                            <div className='rating'>
-                                <Icon component={StarRateRoundedIcon} color="error" className='star'/>
-                                <span>{stay.rating}</span>
-                            </div>
-
+                        alignItems="center"
+                    >
+                        <div className='caption'>
+                            {stay.superHost && (<span className='superHost'>Super Host </span>)}<span>{stay.type}</span>{stay.beds && (<span> . {stay.beds} {stay.beds === 1 ? 'bed' : 'beds'}</span>)}
+                        </div>
+                        <div className='rating'>
+                            <Icon component={StarRateRoundedIcon} color="error" className='star'/>
+                            <span>{stay.rating}</span>
+                        </div>
                     </Grid>
                     <div className='title'>{stay.title}</div>
                 </CardContent>

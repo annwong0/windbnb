@@ -1,0 +1,9 @@
+.username {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}

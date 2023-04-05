@@ -1,0 +1,11 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 460px) {
+    .navbar-searchbar {
+        display: none;
+    }
+}

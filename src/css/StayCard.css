@@ -1,10 +1,9 @@
 .css-46bh2p-MuiCardContent-root {
-    padding: 15px 6px 30px 6px !important;
+    padding: 15px 0px 30px 0px !important;
 }
 
 .card-img {
     border-radius: 10px;
-    width: 98% !important;
     margin: auto;
 }
 
@@ -47,9 +46,10 @@
 }
 
 .card {
-    min-width: 395px;
     margin: auto;
     box-shadow: none !important;
+    padding: 5px 2%;
+    border-radius: 10px !important;
 }
 
 .card:hover {
