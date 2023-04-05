@@ -1,9 +1,5 @@
 import { Paper } from "@mui/material";
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
-
-import SearchIcon from '@mui/icons-material/Search';
-
+import Searchbar from "./Searchbar";
 import Logo from "../logo.png";
 
 function Navbar() {
@@ -28,14 +24,7 @@ function Navbar() {
                         }} 
                     />
                 </div>
-                <ButtonGroup color="error">
-                    <Button>Location</Button>
-                    <Button>Add Guests</Button>
-                    <Button 
-                        endIcon={<SearchIcon />} 
-                        style={{ paddingLeft: "5px"}} 
-                    />
-                </ButtonGroup>
+                <Searchbar />
             </Paper>
         </div>
     )
