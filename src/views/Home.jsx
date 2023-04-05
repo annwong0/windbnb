@@ -11,10 +11,11 @@ function Home() {
             <Navbar />
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={2}>
-                {stays.map((stay, i) => <Grid item xs={12} md={6}>
-            <StayCard stay={stay} key={i}/>
-            </Grid>
-            )}
+                    {stays.map((stay, i) => 
+                        <Grid item xs={12} md={6} key={i}>
+                            <StayCard stay={stay}/>
+                        </Grid>
+                    )}
                 </Grid>
             </Box>
             
