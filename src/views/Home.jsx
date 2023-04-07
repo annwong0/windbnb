@@ -26,7 +26,7 @@ function Home() {
                     <div className="header">Stays in {location}</div>
                     <div>{stays.length} stays</div>
                 </Grid>
-                <Grid container spacing={3}>
+                <Grid container spacing={3} >
                     {stays.map((stay, i) => 
                         <Grid item xs={12} md={6} key={i}>
                             <StayCard stay={stay}/>

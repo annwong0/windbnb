@@ -46,6 +46,7 @@
 }
 
 .card {
+    min-width: 360px;
     margin: auto;
     box-shadow: none !important;
     padding: 5px 2%;

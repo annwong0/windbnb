@@ -6,15 +6,7 @@ import "../css/Navbar.css"
 function Navbar() {
     return (
         <div className="navbar">
-            <Paper 
-                elevation={0}
-                style={{
-                    display:"flex", 
-                    flexWrap:"wrap", 
-                    justifyContent:"space-between",
-                    padding: "20px 5% 20px 5%",
-                }}
-             >
+            <div className="container"> 
                 <div>
                     <img 
                         src={Logo}
@@ -28,7 +20,7 @@ function Navbar() {
                 <div className="navbar-searchbar">
                     <Searchbar />
                 </div>
-            </Paper>
+            </div>
         </div>
     )
 }

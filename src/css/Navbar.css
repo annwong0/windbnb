@@ -2,10 +2,22 @@
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: #fff;
 }
 
 @media only screen and (max-width: 460px) {
     .navbar-searchbar {
         display: none;
+    }
+
+    .container {
+        padding: 10px 2%;
     }
 }
