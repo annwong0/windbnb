@@ -1,18 +1,17 @@
 import StayCard from "../components/StayCard";
-import data from '../data/stays.json';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import '../css/Home.css';
 import { useState } from "react";
 import Searchbar from "../components/Searchbar";
 
-function Home() {
-    const [stays, setStay] = useState(data);
-    const [location, setLocation] = useState('Finland');
+function Home({stays}) {
+    const [location, setLocation] = useState(stays[0].country);
 
     return (
         <div className="home content">
-            <Box sx={{ flexGrow: 1 }} >
+            {stays && (
+                <Box sx={{ flexGrow: 1 }} >
                 <Grid
                     container
                     direction="row"
@@ -34,6 +33,7 @@ function Home() {
                     )}
                 </Grid>
             </Box>
+            )}
         </div>
     )
 }

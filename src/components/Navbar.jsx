@@ -3,7 +3,7 @@ import Searchbar from "./Searchbar";
 import Logo from "../logo.png";
 import "../css/Navbar.css"
 
-function Navbar() {
+function Navbar({selectedStay, setSelectedStay, searchOption, setSearchOption}) {
     return (
         <div className="navbar">
             <div className="container"> 
@@ -18,7 +18,10 @@ function Navbar() {
                     />
                 </div>
                 <div className="navbar-searchbar">
-                    <Searchbar />
+                    <Searchbar 
+                        selectedStay={selectedStay} setSelectedStay={setSelectedStay} 
+                        searchOption={searchOption} setSearchOption={setSearchOption}
+                    />
                 </div>
             </div>
         </div>
