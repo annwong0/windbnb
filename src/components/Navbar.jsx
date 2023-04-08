@@ -1,9 +1,8 @@
-import { Paper } from "@mui/material";
 import Searchbar from "./Searchbar";
 import Logo from "../logo.png";
 import "../css/Navbar.css"
 
-function Navbar({selectedStay, setSelectedStay, searchOption, setSearchOption}) {
+function Navbar({selectedStays, handleSelectStays}) {
     return (
         <div className="navbar">
             <div className="container"> 
@@ -12,15 +11,14 @@ function Navbar({selectedStay, setSelectedStay, searchOption, setSearchOption}) 
                         src={Logo}
                         alt="logo"
                         style={{ 
-                            height: "25px", 
-                            paddingTop: "3px" 
+                            height: "20px", 
+                            paddingTop: "5px" 
                         }} 
                     />
                 </div>
                 <div className="navbar-searchbar">
                     <Searchbar 
-                        selectedStay={selectedStay} setSelectedStay={setSelectedStay} 
-                        searchOption={searchOption} setSearchOption={setSearchOption}
+                        selectedStays={selectedStays} handleSelectStays={handleSelectStays} 
                     />
                 </div>
             </div>

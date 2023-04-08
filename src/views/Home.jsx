@@ -5,12 +5,12 @@ import '../css/Home.css';
 import { useState } from "react";
 import Searchbar from "../components/Searchbar";
 
-function Home({stays}) {
-    const [location, setLocation] = useState(stays[0].country);
+function Home({selectedStays, handleSelectStays}) {
+    const [location, setLocation] = useState('Finland');
 
     return (
         <div className="home content">
-            {stays && (
+            {selectedStays && (
                 <Box sx={{ flexGrow: 1 }} >
                 <Grid
                     container
@@ -20,13 +20,13 @@ function Home({stays}) {
                     sx={{ marginBottom: "32px"}}
                 >
                     <div className="home-searchbar">
-                        <Searchbar />
+                        <Searchbar handleSelectStays={handleSelectStays}/>
                     </div>
                     <div className="header">Stays in {location}</div>
-                    <div>{stays.length} stays</div>
+                    <div>{selectedStays.length} stays</div>
                 </Grid>
                 <Grid container spacing={3} >
-                    {stays.map((stay, i) => 
+                    {selectedStays.map((stay, i) => 
                         <Grid item xs={12} md={6} key={i}>
                             <StayCard stay={stay}/>
                         </Grid>

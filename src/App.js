@@ -6,19 +6,22 @@ import data from './data/stays.json';
 import { useState } from 'react';
 
 function App() {
-  const [stays, setStays] = useState(data);
-  const [selectedStay, setSelectedStay] = useState(null);
-  const [searchOption, setSearchOption] = useState(null);
-  
+  const [selectedStays, setSelectedStays] = useState(data);
+
+  const handleSelectStays = (stays) => {
+    setSelectedStays(stays)
+    console.log(stays)
+    console.log('updated')
+    console.log(selectedStays)
+  }
+
   return (
     <div className="App">
       <Navbar 
-        selectedStay={selectedStay} setSelectedStay={setSelectedStay} 
-        searchOption={searchOption} setSearchOption={setSearchOption}
+        selectedStays={selectedStays} handleSelectStays={handleSelectStays} 
       />
       <Home 
-        stays={stays} 
-        selectedStay={selectedStay} setSelectedStay={setSelectedStay}
+        selectedStays={selectedStays} handleSelectStays={handleSelectStays}
       />
       <Footer />
     </div>
