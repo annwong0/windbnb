@@ -27,10 +27,6 @@ function Searchbar({selectedStays, handleSelectStays}) {
     const [adults, setAdults] = useState(0);
     const [children, setChildren] = useState(0);
 
-    useEffect(() => {
-        setLocation(location ? location : 'Select Location');
-    }, [selectedStays])
-
     const toggleDrawer = (option, open) => (event) => {
         setSearchOption(option);
         setOpenDrawer(open);
@@ -64,11 +60,11 @@ function Searchbar({selectedStays, handleSelectStays}) {
         let city = '';
         let country = '';
         let totalGuests = children + adults;
-        let tmp = [...stays];
+        var tmp = [...stays];
         if (totalGuests > 0) {
             tmp = tmp.filter((stay) => totalGuests <= stay.maxGuests)
         }
-        if (location) {
+        if (location !== null) {
             city = location.split(',')[0];
             country = location.split(',')[1];
             tmp = tmp.filter((stay) => stay.city === city)
@@ -144,7 +140,7 @@ function Searchbar({selectedStays, handleSelectStays}) {
                                 <List>
                                     <ListItem disablePadding sx={{paddingBottom: '20px'}}>
                                         <div className='accordion-header' style={{gap: '5px'}}>
-                                            <span>Guests</span>
+                                            <span>Adults</span>
                                             <span>Ages 13 or above</span>
                                             <div className='flex-row'>
                                                 <IconButton size="small" color="error" onClick={() => setAdults(Math.max(0, adults - 1))}><RemoveIcon /></IconButton>

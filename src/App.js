@@ -10,9 +10,6 @@ function App() {
 
   const handleSelectStays = (stays) => {
     setSelectedStays(stays)
-    console.log(stays)
-    console.log('updated')
-    console.log(selectedStays)
   }
 
   return (
