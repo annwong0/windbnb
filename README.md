@@ -14,7 +14,7 @@
 
 ## Overview
 
-![screenshot]
+![screenshot](https://github.com/annwong0/windbnb/blob/master/public/screenshot.png)
 
 ### Built With
 
@@ -25,6 +25,8 @@
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD) was to build an application to complete the given user stories.
+
+- search stays by location or the number of guests
 
 ## How To Use
 
