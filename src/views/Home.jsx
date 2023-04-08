@@ -27,7 +27,7 @@ function Home({selectedStays, handleSelectStays}) {
                 </Grid>
                 <Grid container spacing={3} >
                     {selectedStays.map((stay, i) => 
-                        <Grid item xs={12} md={6} key={i}>
+                        <Grid item xs={12} sm={6} key={i}>
                             <StayCard stay={stay}/>
                         </Grid>
                     )}

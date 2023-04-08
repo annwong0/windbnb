@@ -4,6 +4,10 @@
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+} 
+
+.css-10hburv-MuiTypography-root {
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .accordion-header span:first-of-type {
@@ -30,8 +34,11 @@
     justify-content: center;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 600px) {
     .css-11lq3yg-MuiGrid-root {
         height: 70vh;
+    }
+    .css-19w83rt-MuiButtonGroup-root .MuiButtonGroup-grouped:not(:last-of-type) span{
+        content: '';
     }
 }

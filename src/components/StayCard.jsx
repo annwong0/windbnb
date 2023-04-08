@@ -10,7 +10,7 @@ function StayCard({stay}) {
     return (
         <div>
             {stay && 
-            (<Card sx={{ minWidth: 395, margin: 'auto' }} className='card'>
+            (<Card sx={{ margin: 'auto' }} className='card'>
                 <CardMedia
                     component="img" 
                     image={stay.photo} 

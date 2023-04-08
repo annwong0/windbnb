@@ -18,6 +18,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import IconButton from '@mui/material/IconButton';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
+import PersonIcon from '@mui/icons-material/Person';
 
 function Searchbar({selectedStays, handleSelectStays}) {
     const [location, setLocation] = useState(null);
@@ -76,16 +77,14 @@ function Searchbar({selectedStays, handleSelectStays}) {
         <div>
             <ButtonGroup color="error" variant="contained" disableElevation>
                 <Button 
-                    style={{ textTransform: "capitalize"}}
                     onClick={toggleDrawer('location', true)}
                 >
-                    {location ? location : 'Select Location'}
+                    <span>{location ? location : 'Select Location'}</span>
                 </Button>
                 <Button 
-                    style={{ textTransform: "capitalize"}}
                     onClick={toggleDrawer('addGuests', true)}
                 >
-                    Add Guests
+                    <span>Add Guests</span>
                 </Button>
                 <Button 
                     endIcon={<SearchIcon />} 
