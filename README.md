@@ -1,7 +1,7 @@
 # Windbnb
 
-- Solution for a [challenge](https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD) from [Devchallenges.io](http://devchallenges.io)
-- [Demo](https://annwong0.github.io/windbnb/)
+- Solution for a [challenge](https://devchallenges.io/paths/responsive-web-developer) from [Devchallenges.io](http://devchallenges.io)
+  - Demo: [404 Not Found](https://responsive-pages.web.app/devChallenges/404)
 
 ## Table of Contents
 
@@ -14,7 +14,6 @@
 
 ## Overview
 
-![screenshot](https://github.com/annwong0/windbnb/blob/master/public/screenshot.png)
 
 ### Built With
 
